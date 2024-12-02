@@ -1,0 +1,9 @@
+cc_prebuilt_library {
+    name: "libEncodermpp",
+    compile_multilib: "64",
+    srcs: ["libEncodermpp.so"],
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+}
