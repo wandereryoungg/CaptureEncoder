@@ -430,7 +430,7 @@ jobject CaptureModel::removeEncoderUnit(int encoderId) {
 int CaptureModel::querySensorTimings() {
     int ret = NO_ERROR;
 
-    int fd = open("/dev/v4l-subdev2", O_RDWR);
+    int fd = open("/dev/v4l-subdev5", O_RDWR);
     if (fd < 0) {
         ALOGE("%s   open device failed: %s", __func__, strerror(errno));
         return -errno;
@@ -455,7 +455,7 @@ int CaptureModel::querySensorTimings() {
 int CaptureModel::getSensorFormat() {
     int ret = NO_ERROR;
 
-    int fd = open("/dev/v4l-subdev2", O_RDWR);
+    int fd = open("/dev/v4l-subdev5", O_RDWR);
     if (fd < 0) {
         ALOGE("%s   open device failed: %s", __func__, strerror(errno));
         return -errno;
@@ -482,7 +482,7 @@ int CaptureModel::getSensorFormat() {
 int CaptureModel::setSensorFormat() {
     int ret = NO_ERROR;
 
-    int fd = open("/dev/v4l-subdev2", O_RDWR);
+    int fd = open("/dev/v4l-subdev5", O_RDWR);
     if (fd < 0) {
         ALOGE("%s   open device failed: %s", __func__, strerror(errno));
         return -errno;
@@ -519,7 +519,7 @@ int CaptureModel::setSensorFormat() {
 int CaptureModel::setSensorInterval() {
     int ret = NO_ERROR;
 
-    int fd = open("/dev/v4l-subdev2", O_RDWR);
+    int fd = open("/dev/v4l-subdev5", O_RDWR);
     if (fd < 0) {
         ALOGE("%s   open device failed: %s", __func__, strerror(errno));
         return -errno;
